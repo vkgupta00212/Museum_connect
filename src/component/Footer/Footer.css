@@ -1,0 +1,118 @@
+/* Base Styles */
+.footer-wrapper {
+  margin: 7rem auto;
+  padding: 0.5rem;
+  display: flex;
+  border-top: 1.5px solid #fe9e0d;
+  width: 95%;
+  
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.footer-logo-container {
+  max-width: 150px;
+}
+
+.footer-icons {
+  margin-top: 2.5rem;
+}
+
+.footer-icons svg {
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+  color: #585858;
+}
+
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
+}
+
+.footer-section-columns span {
+  margin: 0.25rem 0rem;
+  font-weight: 600;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center; /* Align the items to the center */
+    margin: 3rem 1rem; /* Adjust margins */
+  }
+
+  .footer-logo-container {
+    max-width: 120px; /* Resize logo */
+  }
+
+  .footer-icons {
+    margin-top: 1rem;
+  }
+
+  .footer-icons svg {
+    font-size: 1.2rem; /* Slightly smaller icons */
+    margin-right: 1rem;
+  }
+
+  .footer-section-two {
+    justify-content: center; /* Center the content for better alignment */
+    margin-top: 1rem;
+  }
+
+  .footer-section-columns {
+    min-width: 150px; /* Reduce the minimum width for columns */
+    margin-bottom: 1rem; /* Add space between columns */
+  }
+
+  .footer-section-columns span {
+    font-size: 1rem; /* Adjust text size for better readability on mobile */
+  }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center; /* Center-align the content */
+    margin: 2rem 1rem;
+  }
+
+  .footer-logo-container {
+    max-width: 100px; /* Make the logo smaller */
+  }
+
+  .footer-icons {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .footer-icons svg {
+    font-size: 1rem; /* Smaller icons for mobile */
+    margin-right: 0.8rem;
+  }
+
+  .footer-section-two {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .footer-section-columns {
+    min-width: 140px; /* Smaller minimum width for columns */
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-section-columns span {
+    font-size: 0.9rem; /* Smaller text size */
+  }
+}

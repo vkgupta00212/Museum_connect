@@ -1,0 +1,133 @@
+/* Single Booking Styles */
+.singleBooking {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  max-width: 750px;
+  border-radius: 2rem;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.booking-option {
+  margin: 0 auto;
+  align-items: center;
+  padding: 1rem;
+}
+
+.single-input {
+  margin-left: 0;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.wrap-inp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.singleBooking-backgroundImage {
+  position: absolute;
+  left: -150px;
+  z-index: -2;
+  margin-top: -15rem;
+}
+
+.single-bookingWrapped {
+  flex: 0.9;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.error-input {
+  border-color: red;
+}
+
+.error-box {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.book-button {
+  padding: 1rem 2.5rem;
+  background-color: #fe9e0d;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-button:hover {
+  background-color: #e48f0f;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .singleBooking {
+    padding: 1rem 1.5rem; /* Reduced padding */
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .book-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 0.8rem 2rem; /* Adjust button padding */
+  }
+
+  .wrap-inp {
+    gap: 0.8rem; /* Reduced gap between form elements */
+  }
+
+  .single-input {
+    margin-left: 0; /* Align input fields properly */
+  }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .singleBooking {
+    padding: 1rem; /* Even smaller padding */
+    max-width: 100%; /* Full width */
+  }
+
+  .book-button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.6rem 1.5rem; /* Adjust button padding */
+  }
+
+  .wrap-inp {
+    gap: 0.5rem; /* Even smaller gap */
+  }
+
+  .error-box {
+    font-size: 0.8rem; /* Smaller error message text */
+  }
+}

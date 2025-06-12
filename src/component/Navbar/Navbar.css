@@ -1,0 +1,135 @@
+/* Base Styles */
+*{
+ 
+}
+
+.nav-logo-container {
+  width: 17rem;
+  background-color: transparent;
+}
+
+.allNav {
+  border: 1.5px solid rgb(255, 136, 0);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21rem;
+  max-height: 100px;
+  padding: 0px;
+  margin: 0rem auto;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.navbar-menu-container {
+  display: none; /* Initially hidden, will be displayed on smaller screens */
+}
+
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  border: 1px solid rgb(251, 135, 2);
+}
+
+.navbar-cart-icon {
+  font-size: 1.75rem;
+}
+
+.primary-button:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .allNav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navbar-links-container a {
+    margin-right: 0; /* Reset margin */
+    font-size: 1rem; /* Slightly smaller font size */
+  }
+
+  .navbar-cart-icon {
+    font-size: 1.5rem;
+  }
+
+  .navbar-menu-container {
+    display: block; /* Display the menu icon on smaller screens */
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-logo-container {
+    width: 12rem; /* Adjust logo size */
+  }
+
+  .primary-button {
+    font-size: 1rem; /* Slightly smaller font size for buttons */
+    padding: 0.8rem 1.5rem; /* Adjust padding */
+  }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar-links-container {
+    display: none; /* Hide links on mobile */
+  }
+
+  .navbar-menu-container {
+    display: block;
+  }
+
+  .navbar-menu-container svg {
+    font-size: 2rem; /* Increase icon size for better visibility */
+  }
+
+  nav {
+    padding: 0 0.5rem;
+  }
+
+  .primary-button {
+    font-size: 0.9rem; /* Adjust font size further */
+    padding: 0.7rem 1.3rem;
+  }
+}

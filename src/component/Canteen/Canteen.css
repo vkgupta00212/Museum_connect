@@ -1,0 +1,147 @@
+/* FoodOrder Styles */
+.FoodOrder {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  max-width: 750px;
+  border-radius: 2rem;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem auto;
+  overflow: hidden; /* Ensures content doesn't overflow on small screens */
+}
+
+.menu {
+  margin-bottom: 1.5rem;
+}
+
+ul.combineMenu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column; /* Ensure separate lines */
+  margin-bottom: 1rem;
+}
+
+.menu-name {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.add-to-cart-button {
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: #FFC107; /* Changed to yellow for differentiation */
+  border: none;
+  border-radius: 5px;
+  max-width: 150px;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #FFD54F; /* Lighter yellow on hover */
+  color: #000;
+}
+
+.cart {
+  margin-top: 1.5rem;
+}
+
+.cart-item {
+  margin-bottom: 0.5rem;
+}
+
+.calculate-button {
+  padding: 1rem 2.5rem;
+  background-color: #28A745;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #218838;
+}
+
+.singleBooking-backgroundImage {
+  position: absolute;
+  left: -150px;
+  z-index: -2;
+  margin-top: -15rem;
+}
+
+.foodOrderWrapped {
+  flex: 0.9;
+  margin-right: 1rem;
+}
+
+/* Responsive Styles for Smaller Screens */
+
+/* For Tablets and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .FoodOrder {
+    padding: 1rem 1.5rem; /* Reduced padding */
+    max-width: 100%; /* Make it take full width on small screens */
+    margin: 1.5rem auto; /* Adjust margins */
+  }
+
+  .menu-name {
+    font-size: 0.9rem; /* Smaller font size for menu items */
+  }
+
+  .add-to-cart-button {
+    font-size: 0.8rem; /* Smaller button text */
+    padding: 0.4rem 1rem; /* Smaller padding */
+    max-width: 130px; /* Adjust max-width */
+  }
+
+  .calculate-button {
+    font-size: 1rem; /* Smaller text for the calculate button */
+    padding: 0.8rem 2rem; /* Adjust padding */
+  }
+
+  .cart-item {
+    font-size: 0.9rem; /* Smaller font size for cart items */
+  }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .FoodOrder {
+    padding: 1rem; /* Reduced padding */
+    max-width: 100%; /* Ensure full-width */
+    margin: 1rem auto; /* Adjust margins */
+  }
+
+  .menu-name {
+    font-size: 0.85rem; /* Even smaller font size */
+  }
+
+  .add-to-cart-button {
+    font-size: 0.75rem; /* Smaller button text */
+    padding: 0.3rem 0.8rem; /* Smaller padding */
+    max-width: 120px; /* Adjust max-width */
+  }
+
+  .calculate-button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.7rem 1.5rem; /* Adjust padding */
+  }
+
+  .cart-item {
+    font-size: 0.8rem; /* Smaller text for cart items */
+  }
+}

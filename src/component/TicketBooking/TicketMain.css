@@ -1,0 +1,154 @@
+.ticket-section-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.ticket-background-image-container {
+  position: absolute;
+  left: -150px;
+  z-index: -2;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticketbookingSection {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-subheading {
+  font-weight: 700;
+  color: black;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.booking-option {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 250px;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
+}
+
+.grid-info {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.grid-button {
+  padding: 1rem;
+  background-color: #fe9e0d;
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  width: 100%;
+}
+
+.grid-button:hover {
+  background-color: #e48f0f;
+  transition: 0.3s ease-in-out;
+}
+
+.bookinginfo {
+  padding: 5px;
+  margin-top: 40px;
+  font-weight: 400;
+  color: black;
+  font-size: 1.3rem;
+  border-top: 2px solid #fe9e0d;
+  text-align: center;
+}
+
+.bookinginfo ul li {
+  padding: 3px;
+  text-align: start;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .booking-option {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .grid-item {
+      width: 90%;
+  }
+
+  .grid-button {
+      font-size: 0.9rem;
+  }
+
+  .bookinginfo {
+      font-size: 1rem;
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .ticketbookingSection {
+      padding: 1rem;
+  }
+
+  .booking-subheading {
+      font-size: 1.5rem;
+  }
+
+  .grid-image {
+      height: 120px;
+  }
+
+  .grid-button {
+      font-size: 0.8rem;
+      padding: 0.8rem;
+  }
+
+  .bookinginfo {
+      font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,112 @@
+/* Booking Option Styles */
+.BookingOption-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .BookingOption-backgroundImage {
+    position: absolute;
+    left: -150px;
+    z-index: -2;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bookingoption-Section {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-subheading {
+    font-weight: 700;
+    color: black;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .booking-option {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .ticket-button {
+    padding: 1rem 2.5rem;
+    background-color: #fe9e0d;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ticket-button:hover {
+    background-color: #e48f0f;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For Tablets and below (max-width: 768px) */
+  @media (max-width: 768px) {
+    .bookingoption-Section {
+      padding: 1rem 1.5rem; /* Reduce padding on smaller screens */
+      max-width: 100%; /* Allow the container to take full width */
+    }
+  
+    .booking-subheading {
+      font-size: 1.5rem; /* Smaller subheading for tablets */
+    }
+  
+    .ticket-button {
+      font-size: 1rem; /* Smaller button text */
+      padding: 0.8rem 2rem; /* Adjust button padding */
+    }
+  
+    .booking-option {
+      gap: 0.8rem; /* Reduce the gap between booking options */
+    }
+  }
+  
+  /* For Mobile (max-width: 480px) */
+  @media (max-width: 480px) {
+    .bookingoption-Section {
+      padding: 1rem; /* Reduced padding for mobile */
+      max-width: 100%; /* Full width */
+    }
+  
+    .booking-subheading {
+      font-size: 1.3rem; /* Smaller font for mobile */
+    }
+  
+    .ticket-button {
+      font-size: 0.9rem; /* Even smaller button text */
+      padding: 0.6rem 1.5rem; /* Adjust padding */
+    }
+  
+    .booking-option {
+      gap: 0.5rem; /* Even smaller gap between booking options */
+    }
+  }
+  

@@ -1,0 +1,33 @@
+.payment-backgroundImage {
+    position: absolute;
+    left: -150px;
+    z-index: -2;
+    margin-top: -15rem;
+  }
+
+ .paymentWrapped {
+    flex: 0.9;
+    position: relative;
+    margin-right: 1rem;
+  }
+
+  .payment {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    max-width: 750px;
+    border-radius: 2rem;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  
+  .booking-option {
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+
+ 
