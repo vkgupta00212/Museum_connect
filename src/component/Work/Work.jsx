@@ -1,15 +1,12 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
-import './Work.css';
+import "./Work.css";
 
 const Work = () => {
   const navigate = useNavigate();
 
-  const bookingOption = ()=>{
+  const bookingOption = () => {
     navigate("/bookingoption");
-  }
+  };
 
   return (
     <div className="work-section-container">
@@ -23,27 +20,14 @@ const Work = () => {
         </div>
 
         <div className="wrap-inp">
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-            />
-           
-          </div>
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" placeholder="Enter your name" />
+        </div>
 
-          <div className="wrap-inp">
-            <label htmlFor="custId">CustId</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-            />
-           
-          </div>
-
-          
-        
+        <div className="wrap-inp">
+          <label htmlFor="custId">CustId</label>
+          <input type="text" name="name" placeholder="Enter your name" />
+        </div>
       </div>
     </div>
   );
