@@ -41,10 +41,7 @@ const Navbar = () => {
     { text: "Home", icon: <HomeIcon />, path: "/" },
     { text: "Ticket", icon: <InfoIcon />, path: "/ticket" },
     { text: "Canteen", icon: <CommentRoundedIcon />, path: "/canteen" },
-
-    isLoggedIn
-      ? { text: "Logout", icon: <PersonIcon />, action: handleLogout }
-      : { text: "Login", icon: <PersonIcon />, path: "/login" },
+    { text: "Login", icon: <PersonIcon />, path: "/login" },
   ];
 
   return (
